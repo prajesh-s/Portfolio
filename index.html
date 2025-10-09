@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prajesh S Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        /* Reset & base */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Verdana, Arial, sans-serif;
+            margin: 0;
+            background: #fdfdfd;
+            color: #333;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: #217dbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0b4a78;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 24px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin: 0;
+            flex: 1 1 200px;
+        }
+
+        header p {
+            flex: 2 1 500px;
+            margin: 8px 0 0 20px;
+            font-weight: 300;
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        /* Contact Info */
+        .contact {
+            flex: 1 1 100%;
+            margin-top: 16px;
+            font-size: 0.9rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 12px;
+        }
+
+        .contact span {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact strong {
+            margin-right: 4px;
+            font-weight: 600;
+        }
+
+        /* Container */
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            padding: 0 20px 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        /* Card Style */
+        .card {
+            background: #fff;
+            box-shadow: 0 5px 18px rgb(0 0 0 / 0.07);
+            padding: 24px 28px;
+            border-radius: 12px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 30px rgb(0 0 0 / 0.12);
+        }
+
+        /* Section Titles */
+        .section-title {
+            border-bottom: 3px solid #217dbb;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #1e293b;
+        }
+
+        /* Headings */
+        h2 {
+            margin: 0 0 14px 0;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #444444;
+            font-weight: 500;
+        }
+
+        /* Text */
+        p {
+            margin-top: 6px;
+            margin-bottom: 14px;
+            color: #555;
+        }
+
+        /* Contact Section List */
+        section.card ul.contact-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        section.card ul.contact-list li {
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header p {
+                margin: 12px 0 0 0;
+                flex: 1 1 100%;
+            }
+            .contact {
+                justify-content: flex-start;
+            }
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Responsive Card Padding */
+        @media (max-width: 480px) {
+            .card {
+                padding: 18px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Prajesh S</h1>
+        <p>Motivated B.E. CSE graduate with a foundation in programming, web development and data-driven analytics. Driven to deliver scalable solutions and support business
+            growth.</p>
+
+        <div class="contact" aria-label="Contact Information">
+            <span><strong>Phone:</strong> 91-9025853186</span>
+            <span><strong>Email:</strong> <a href="mailto:sprajesh446@gmail.com">sprajesh446@gmail.com</a></span>
+            <span><strong>Location:</strong> Virattipathu, Madurai 626106</span>
+            <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prajesh-s-a9a706249" target="_blank" rel="noopener noreferrer">Profile</a></span>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <section class="card" aria-labelledby="education-title">
+            <h2 class="section-title" id="education-title">Education</h2>
+            <p><strong>B.E. Computer Science and Engineering</strong><br />PSNA College of Engineering and Technology, Dindugal<br />2021 – 2025,
+                CGPA: 7.43</p>
+            <p><strong>12th Std</strong> CEOA Matric. Hr. Sec. School, Madurai, 2021, 80%</p>
+            <p><strong>10th Std</strong> Krishnamal Ramasubaiyer School, Madurai, 2019, 81%</p>
+        </section>
+
+        <section class="card" aria-labelledby="skills-title">
+            <h2 class="section-title" id="skills-title">Skills</h2>
+            <ul>
+                <li>Programming: Java, C, Python</li>
+                <li>Web: HTML, CSS, Flask</li>
+                <li>UI/UX Tools: Figma, Canva</li>
+                <li>Database: MSSQL</li>
+                <li>Version Control: Git</li>
+                <li>Soft Skills: Decision Making, Leadership, Project Ownership</li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="projects-title">
+            <h2 class="section-title" id="projects-title">Projects</h2>
+            <ul>
+                <li>
+                    <strong>Smart Telemedicine Remote Monitoring System</strong><br />- Python, Flask, Random Forest<br />- Chronic disease prediction and remote care
+                </li>
+                <li>
+                    <strong>Emergency Ambulance Tracking System</strong><br />- Java, MsSQL<br />- Real-time emergency vehicle tracking
+                </li>
+                <li>
+                    <strong>Automated Redeployment Rescue System</strong>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="internships-title">
+            <h2 class="section-title" id="internships-title">Internships</h2>
+            <ul>
+                <li>Arsus Solutions – Duration: 3 months – Focus: Web Applications</li>
+                <li>Asper Minds Technology Pvt. Ltd. – Duration: 3 months – Focus: Web Applications & MSSQL database</li>
+                <li>Backend Developer Intern</li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="certifications-title">
+            <h2 class="section-title" id="certifications-title">Certifications</h2>
+            <ul>
+                <li>Oracle Academy – Full Stack Development using Python (Workshop)</li>
+                <li>IoT Workshop – Certified</li>
+                <li>Application Development using Flutter (Workshop)</li>
+            </ul>
+        </section>
+
+        <section class="card" aria-labelledby="contact-title">
+            <h2 class="section-title" id="contact-title">Contact</h2>
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:sprajesh446@gmail.com">sprajesh446@gmail.com</a></li>
+                <li>Phone: 91-9025853186</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/prajesh-s-a9a706249">prajesh-s-a9a706249</a></li>
+                <li>Location: Virattipathu, Madurai 626106</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
